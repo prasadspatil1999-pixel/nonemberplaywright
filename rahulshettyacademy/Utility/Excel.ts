@@ -5,7 +5,7 @@ export class Excel {
             const workbook = xlsx.readFile(filepath)
             const sheet = workbook.Sheets[filename]
             const testdata = xlsx.utils.sheet_to_json(sheet)
-            console.log(testdata)
+            //console.log(testdata)
             return testdata
         }
         catch (error) {
