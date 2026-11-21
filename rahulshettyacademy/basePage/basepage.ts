@@ -14,4 +14,13 @@ export class basepage {
     async click(locator: Locator) {
         await locator.click()
     }
+    async clear(locator:Locator)
+    {
+        await locator.clear()
+    }
+    async verfiMessage(locator:Locator)
+    {
+        return await locator.textContent()
+    }
+    
 }
