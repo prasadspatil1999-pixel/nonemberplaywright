@@ -10,6 +10,7 @@ export class basepage {
     async fill(locator: Locator, value: string) {
         await locator.fill(value)
         console.log(value)
+        
     }
     async click(locator: Locator) {
         await locator.click()
